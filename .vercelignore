@@ -1,0 +1,10 @@
+node_modules
+.next
+dev-server.log
+*.tsbuildinfo
+.playwright-mcp
+portfolio-*.png
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

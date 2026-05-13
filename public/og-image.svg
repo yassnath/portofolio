@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0B0F19"/>
+  <path d="M0 0H1200V630H0V0Z" fill="url(#grid)" opacity="0.42"/>
+  <path d="M0 0H1200V630H0V0Z" fill="url(#wash)"/>
+  <rect x="80" y="84" width="1040" height="462" rx="34" fill="#121826" fill-opacity="0.82" stroke="#1E293B"/>
+  <text x="124" y="206" fill="#22D3EE" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="4">FULLSTACK DEVELOPER</text>
+  <text x="124" y="290" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="800">Andreas Natanael Irawan</text>
+  <text x="124" y="360" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500">Scalable web, mobile, POS, ERP, and workflow systems</text>
+  <rect x="124" y="424" width="220" height="54" rx="14" fill="url(#button)"/>
+  <text x="154" y="459" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">Portfolio 2026</text>
+  <rect x="836" y="144" width="194" height="194" rx="36" fill="url(#accent)" opacity="0.9"/>
+  <path d="M896 287V197H922L970 253V197H998V287H972L924 231V287H896Z" fill="#0B0F19"/>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#1E293B" stroke-opacity="0.7"/>
+    </pattern>
+    <linearGradient id="wash" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6" stop-opacity="0.22"/>
+      <stop offset="0.48" stop-color="#22D3EE" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="button" x1="124" y1="424" x2="344" y2="478" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="836" y1="144" x2="1030" y2="338" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6"/>
+      <stop offset="0.48" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+</svg>
