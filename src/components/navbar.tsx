@@ -44,9 +44,6 @@ export function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 xl:flex">
-          <Button href={profile.cv} variant="secondary" download>
-            Download IT CV
-          </Button>
           <Button href="#contact">Contact Me</Button>
         </div>
 
