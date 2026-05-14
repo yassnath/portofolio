@@ -29,9 +29,9 @@ export function ExperienceSection() {
                       <h3 className="text-xl font-bold text-slate-50">{experience.company}</h3>
                       <p className="mt-2 text-sm font-semibold text-primary">{experience.role}</p>
                     </div>
-                    <div className="inline-flex w-fit items-center gap-2 rounded-full border border-glass-border bg-background/70 px-3 py-1.5 text-xs font-semibold text-slate-300">
-                      <CalendarDays size={14} aria-hidden="true" />
-                      {experience.period}
+                    <div className="inline-flex w-fit max-w-full items-center gap-2 rounded-full border border-glass-border bg-background/70 px-3 py-1.5 text-xs font-semibold leading-5 text-slate-300">
+                      <CalendarDays size={14} className="shrink-0" aria-hidden="true" />
+                      <span className="min-w-0">{experience.period}</span>
                     </div>
                   </div>
                   <p className="mt-4 text-sm leading-6 text-muted-copy">{experience.description}</p>

@@ -9,17 +9,17 @@ export function AboutSection() {
         <SectionHeading
           eyebrow="About"
           title="Information Systems graduate with a builder mindset."
-          description="Saya memiliki latar belakang Sistem Informasi dengan IPK 3.86 dan pengalaman membangun aplikasi web, mobile, dashboard operasional, POS, ERP, serta sistem workflow."
+          description="Saya adalah lulusan Sistem Informasi dengan IPK 3.86 dan pengalaman hands-on dalam full-stack development, mobile development, digital operations, dan system-based workflows."
         />
 
         <div className="space-y-6">
           <div className="premium-border overflow-hidden rounded-2xl p-6 sm:p-8">
             <div className="gradient-rail mb-6 h-1 w-24 rounded-full" aria-hidden="true" />
             <p className="text-lg leading-8 text-slate-200">
-              Saya terbiasa bekerja mandiri maupun kolaboratif, cepat belajar, detail-oriented, dan memiliki ownership tinggi dalam menyelesaikan solusi digital. Fokus saya adalah membangun sistem yang bisa dipakai di dunia nyata: jelas alurnya, aman akses datanya, dan mudah dikembangkan.
+              Saya berpengalaman membangun dan mendukung aplikasi web, mobile, dashboard operasional, POS realtime, ERP multi-tenant, REST API, authentication systems (RBAC), serta implementasi workflow yang terstruktur. Fokus saya adalah membangun sistem yang scalable, production-ready, aman akses datanya, dan jelas alur operasionalnya.
             </p>
             <p className="mt-5 text-base leading-7 text-muted-copy">
-              Di luar full-stack dan mobile development, saya juga memiliki pengalaman content, website administration, cybersecurity, multimedia, dan live production. Kombinasi ini membentuk cara kerja yang kuat di sisi teknis sekaligus peka terhadap kebutuhan pengguna dan operasional.
+              Di luar software development, saya juga memiliki pengalaman digital operations, content, website administration, cybersecurity, multimedia, videography, teaching assistant, dan live production. Kombinasi ini membentuk cara kerja yang detail-oriented, adaptable, cepat belajar, kolaboratif, dan bertanggung jawab terhadap hasil.
             </p>
           </div>
 

@@ -45,7 +45,7 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 xl:flex">
           <Button href={profile.cv} variant="secondary" download>
-            Download CV
+            Download IT CV
           </Button>
           <Button href="#contact">Contact Me</Button>
         </div>
@@ -80,7 +80,7 @@ export function Navbar() {
           ))}
           <div className="mt-2 grid grid-cols-2 gap-2 border-t border-glass-border pt-2">
             <Button href={profile.cv} variant="secondary" className="px-3" download>
-              Download CV
+              IT CV
             </Button>
             <Button href="#contact" className="px-3" onClick={() => setOpen(false)}>
               Contact Me

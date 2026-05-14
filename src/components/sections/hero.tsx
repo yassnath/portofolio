@@ -61,10 +61,6 @@ export function HeroSection() {
               <Mail size={18} aria-hidden="true" />
               Contact Me
             </Button>
-            <Button href={profile.cv} variant="ghost" download>
-              <Download size={18} aria-hidden="true" />
-              Download CV
-            </Button>
           </div>
 
           <div

@@ -3,6 +3,7 @@ import {
   BriefcaseBusiness,
   Code2,
   Database,
+  Download,
   ExternalLink,
   Github,
   GraduationCap,
@@ -29,7 +30,9 @@ export const profile = {
   whatsapp: "https://wa.me/6285771753354",
   linkedin: "https://www.linkedin.com/in/andreasnatanaelirawan",
   github: "https://github.com/yassnath",
-  cv: "/Andreas-Natanael-Irawan-CV.pdf",
+  cv: "/Andreas-Natanael-Irawan-IT-CV.pdf",
+  cvIt: "/Andreas-Natanael-Irawan-IT-CV.pdf",
+  cvGeneral: "/Andreas-Natanael-Irawan-General-CV.pdf",
   gpa: "3.86",
 };
 
@@ -52,8 +55,8 @@ export const heroBadges = [
 
 export const heroSignals = [
   { label: "Role fit", value: "Fullstack / Mobile / Software" },
-  { label: "Systems focus", value: "ERP, POS, RBAC, workflow" },
-  { label: "Recruiter scan", value: "GPA 3.86 + hands-on builds" },
+  { label: "Systems focus", value: "ERP, POS, dashboards, workflow" },
+  { label: "Recruiter scan", value: "GPA 3.86 + hands-on delivery" },
 ];
 
 export const workflowSteps = ["Discover", "Design", "Build", "Automate", "Deploy"];
@@ -67,7 +70,7 @@ export const dashboardHighlights = [
 
 export const stats = [
   { value: "3.86", label: "GPA" },
-  { value: "6+", label: "Core projects" },
+  { value: "5", label: "Featured projects" },
   { value: "2021", label: "Production experience since" },
   { value: "Full-stack", label: "Web, mobile, systems" },
 ];
@@ -77,14 +80,14 @@ export const projects = [
     title: "Solvix ERP",
     subtitle: "Multi-Tenant ERP System",
     description:
-      "A modular ERP platform for finance, procurement, inventory, HR, and project operations with tenant-scoped access control.",
+      "A multi-tenant ERP system covering finance, procurement, inventory, HR, and project operations with tenant-scoped access control.",
     problem:
       "Growing operations need shared business data without exposing one tenant's records to another or slowing approvals across departments.",
     solution:
-      "Designed a tenant-aware data model, role-based permissions, workflow automation, and audit logging for accountable operational flow.",
-    impact: "Improves process visibility, reduces manual handoffs, and prepares core business modules for scalable internal adoption.",
+      "Developed role-based access control, tenant-scoped data security, workflow automation, and audit logging for operational governance.",
+    impact: "Improves governance, process visibility, and accountable data access across core ERP modules.",
     tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-    features: ["Multi-tenant modules", "RBAC security", "Workflow automation", "Audit logging"],
+    features: ["Finance module", "Procurement flow", "Inventory tracking", "HR and projects", "RBAC security", "Audit logging"],
     links: [
       { label: "Case Study", href: "#contact", icon: ExternalLink },
       { label: "GitHub", href: profile.github, icon: Github },
@@ -94,14 +97,14 @@ export const projects = [
     title: "Solvix Moka POS",
     subtitle: "Realtime Coffee Shop POS",
     description:
-      "A realtime POS and kitchen workflow system for coffee shop operations, built around speed, clarity, and reliable reporting.",
+      "A realtime POS and kitchen workflow system for coffee shop operations with clear order states and reliable reporting.",
     problem:
       "Cashier, kitchen, and manager workflows often drift apart when orders, payments, and reporting are handled in separate tools.",
     solution:
-      "Built a POS flow with Server-Sent Events for Kitchen Display updates, split payments, receipt generation, offline auto-sync, and sales exports.",
+      "Built a POS flow with Server-Sent Events for Kitchen Display updates, split payments, receipt generation, offline auto-sync, and CSV sales exports.",
     impact: "Creates a faster counter-to-kitchen loop and gives managers sales visibility through analytics and CSV reporting.",
     tech: ["Next.js", "PostgreSQL", "SSE"],
-    features: ["Realtime KDS", "Split payments", "Receipt generation", "Offline auto-sync", "Sales CSV export"],
+    features: ["Realtime KDS", "New / In Progress / Ready states", "Split payments", "Receipt generation", "Offline auto-sync", "Sales CSV export"],
     links: [
       { label: "Live Demo", href: "#contact", icon: ExternalLink },
       { label: "GitHub", href: profile.github, icon: Github },
@@ -111,14 +114,14 @@ export const projects = [
     title: "CashFlow",
     subtitle: "Android Finance Application",
     description:
-      "A personal finance Android app for tracking income, expenses, debt, and financial signals with cloud-backed data sync.",
+      "An Android finance application for income, expense, debt, and analytics workflows with cloud-backed synchronization.",
     problem:
       "Personal finance tracking becomes inconsistent when data entry, debt notes, and insight generation live in different places.",
     solution:
-      "Created a mobile-first tracking experience with Jetpack Compose, Supabase sync, structured debt records, and AI-based financial insights.",
+      "Created a mobile-first tracking experience with Jetpack Compose, Supabase sync, secure authentication, debt records, and AI-based financial insights.",
     impact: "Helps users understand spending patterns, debt position, and financial decisions from a single mobile dashboard.",
     tech: ["Kotlin", "Jetpack Compose", "Supabase"],
-    features: ["Income tracking", "Expense tracking", "AI insights", "Debt tracking", "Cloud sync"],
+    features: ["Income tracking", "Expense tracking", "Analytics", "AI insights", "Debt tracking", "Secure auth", "Cloud sync"],
     links: [
       { label: "Case Study", href: "#contact", icon: ExternalLink },
       { label: "GitHub", href: profile.github, icon: Github },
@@ -128,14 +131,14 @@ export const projects = [
     title: "AS Nusa Trans Mobile",
     subtitle: "Logistics Operations Dashboard",
     description:
-      "A mobile dashboard for logistics operations covering fleet, order, and finance monitoring with role-based access.",
+      "A logistics operations dashboard for fleet, orders, and financial tracking with role-based mobile access.",
     problem:
       "Logistics teams need a centralized operational view without giving every role the same level of access or control.",
     solution:
       "Built structured dashboards and workflow controls in Flutter with Supabase-backed data to separate fleet, orders, and finance views.",
     impact: "Supports faster operational monitoring and clearer accountability across logistics roles.",
     tech: ["Flutter", "Supabase"],
-    features: ["Role-based dashboard", "Fleet monitoring", "Order workflow", "Finance overview"],
+    features: ["Role-based dashboard", "Fleet monitoring", "Order workflow", "Financial tracking", "Structured workflow controls"],
     links: [
       { label: "Case Study", href: "#contact", icon: ExternalLink },
       { label: "GitHub", href: profile.github, icon: Github },
@@ -145,14 +148,14 @@ export const projects = [
     title: "Solvix Studio",
     subtitle: "SaaS Agency Platform",
     description:
-      "A SaaS-style agency platform combining public marketing pages with an authenticated client dashboard and order lifecycle flow.",
+      "A SaaS agency platform combining a marketing website, authenticated client dashboard, order wizard, and lifecycle tracking.",
     problem:
       "Service businesses need a clean conversion path while keeping project requests, client access, and lifecycle status organized.",
     solution:
-      "Implemented a marketing website, authenticated dashboard, multi-step order wizard, lifecycle tracking, and RBAC-driven client views.",
+      "Implemented a marketing website, authenticated dashboard, multi-step order wizard, lifecycle tracking, route-level protection, and RBAC enforcement.",
     impact: "Turns service inquiries into trackable project workflows and makes client communication more structured.",
     tech: ["Next.js", "Prisma", "PostgreSQL"],
-    features: ["Client dashboard", "Order wizard", "Lifecycle tracking", "RBAC"],
+    features: ["Marketing website", "Client dashboard", "Order wizard", "Lifecycle tracking", "Route protection", "RBAC"],
     links: [
       { label: "Live Demo", href: "#contact", icon: ExternalLink },
       { label: "GitHub", href: profile.github, icon: Github },
@@ -162,46 +165,60 @@ export const projects = [
 
 export const experiences = [
   {
-    company: "Hospitality & Entertainment Venue",
-    role: "Fullstack Website Developer, Custom POS Laravel",
-    period: "Feb 2026",
-    description:
-      "Developed web and POS workflows for hospitality operations with focus on ordering, administration, and operational reliability.",
-  },
-  {
-    company: "CV AS Nusa Trans",
+    company: "Hospitality & Entertainment Venue - Jakarta, Indonesia",
     role: "Fullstack Website Developer",
-    period: "Sep 2025 - Jan 2026",
+    period: "Remote Freelance | Feb 8, 2026 - Feb 27, 2026",
     description:
-      "Worked with Next.js, Laravel, and Docker to support logistics-facing web systems and operational dashboards.",
+      "Built a custom POS using Laravel for hospitality operations with focus on ordering, administration, and operational reliability.",
   },
   {
-    company: "PT Avatara Generasi Istimewa",
-    role: "Content Creator, Live Streamer TikTok, Website Administrator",
-    period: "Nov 2024 - Sep 2025",
+    company: "CV AS Nusa Trans - Sidoarjo, Indonesia",
+    role: "Fullstack Website Developer / Mobile Application Developer",
+    period: "Contract | Sep 2025 - Jan 2026",
     description:
-      "Managed content, livestream execution, and website administration while supporting digital presence and audience operations.",
+      "Worked with Next.js, Laravel, Docker, Flutter, and Supabase to support logistics-facing web systems, mobile applications, and operational dashboards.",
   },
   {
-    company: "PUSIM Unmer",
-    role: "Cyber Security / Penetration Testing",
-    period: "Sep 2024 - Feb 2025",
+    company: "PT Avatara Generasi Istimewa - Jakarta, Indonesia",
+    role: "Content Creator, Live Streamer Tiktok, Website Administrator",
+    period: "Remote Apprenticeship | Nov 2024 - Sep 2025",
+    description:
+      "Managed content, Tiktok livestream execution, and WordPress website administration while supporting digital presence and audience operations.",
+  },
+  {
+    company: "PUSIM Unmer (Pusat Sistem Informasi Multimedia) - Malang, Indonesia",
+    role: "Cyber Security",
+    period: "Internal Apprenticeship | Sep 2024 - Feb 2025",
     description:
       "Supported penetration testing and security-oriented analysis across campus technology environments.",
   },
   {
-    company: "Faculty of Information Technology",
-    role: "Website Manager",
-    period: "Oct 2023 - Mar 2024",
+    company: "Pixelcraft Studios - Batu, Indonesia",
+    role: "Helper Videography",
+    period: "Freelance | May 9, 2024",
     description:
-      "Managed faculty website content, updates, and administration for academic communication needs.",
+      "Assisted videography production workflows for a freelance multimedia project.",
   },
   {
-    company: "Yosgawan Studios",
-    role: "Streaming Operator, Frontend Developer, LED, Video Director",
-    period: "Jan 2021 - Present",
+    company: "Faculty of Information Technology Workshop - Malang, Indonesia",
+    role: "Teaching Assistant",
+    period: "Teaching Assistant | Mar 7, 2024 - Mar 9, 2024",
     description:
-      "Operates multimedia and live production workflows while contributing frontend development support for digital projects.",
+      "Supported a frontend website development workshop covering MySQL and PHP fundamentals.",
+  },
+  {
+    company: "Faculty of Information Technology - Malang, Indonesia",
+    role: "Website Manager",
+    period: "Internal Apprenticeship | Oct 2023 - Mar 2024",
+    description:
+      "Managed the Faculty of Information Technology website, S1 System Information Program Study website, and supported video profile production.",
+  },
+  {
+    company: "Yosgawan Studios - Malang, Indonesia",
+    role: "Streaming Operator, Frontend Developer, LED, Video Director",
+    period: "Freelance | Jan 2021 - Present",
+    description:
+      "Operates OBS, Pro Presenter, Resolume Arena, LED workflows, and video direction while contributing frontend website development with Next.js.",
   },
 ];
 
@@ -209,7 +226,7 @@ export const skills = [
   {
     title: "Frontend",
     icon: Code2,
-    items: ["Next.js", "React", "TailwindCSS", "Flutter", "HTML", "CSS", "JavaScript", "Bootstrap"],
+    items: ["Next.js (App Router)", "React", "TailwindCSS", "Flutter", "HTML", "CSS", "Javascript", "Bootstrap"],
   },
   {
     title: "Backend",
@@ -224,37 +241,37 @@ export const skills = [
   {
     title: "Mobile",
     icon: Smartphone,
-    items: ["Kotlin Android", "Flutter"],
+    items: ["Kotlin (Android)", "Flutter"],
   },
   {
     title: "DevOps & Tools",
     icon: BriefcaseBusiness,
-    items: ["Docker", "Git", "Supabase"],
+    items: ["Docker", "Git"],
   },
   {
     title: "Additional",
     icon: ShieldCheck,
-    items: ["RBAC", "Authentication", "Workflow Automation", "Audit Logging", "Dashboard Development", "POS System", "ERP System"],
+    items: ["Authentication Systems (RBAC)", "Structured Workflow Implementation", "Audit Logging", "Dashboard Development", "POS System", "ERP System"],
   },
 ];
 
 export const certifications = [
   {
-    issuer: "NVIDIA",
+    issuer: "NVIDIA (2025)",
     items: ["Building Transformer Based Natural Language Processing Applications", "Fundamentals of Deep Learning"],
   },
   {
-    issuer: "Cyber Academy",
+    issuer: "Cyber Academy (2024)",
     items: ["Classical Cryptography for Beginner Course", "Introduction to Information Security"],
   },
   {
-    issuer: "Dicoding",
+    issuer: "Dicoding (2023)",
     items: [
       "Learning Basic Git with Github",
-      "Basic Programming to Become a Software Developer",
-      "Programming Logic 101",
-      "Data 101",
-      "Career as Software Developer",
+      "Started a Basic Programming to Become a Software Developer",
+      "Researching Careers as Software Developer",
+      "Data Recognition in Programming (Data 101)",
+      "Introduction to Programming Logic (Programming Logic 101)",
     ],
   },
 ];
@@ -273,10 +290,15 @@ export const contactLinks = [
   { label: "WhatsApp", href: profile.whatsapp, icon: MessageCircle },
 ];
 
+export const cvLinks = [
+  { label: "Download IT CV", href: profile.cvIt, icon: Download },
+  { label: "Download Global CV", href: profile.cvGeneral, icon: Download },
+];
+
 export const quickFacts = [
   { label: "Location", value: profile.location, icon: MapPin },
   { label: "Email", value: profile.email, icon: Mail },
   { label: "Phone", value: profile.phone, icon: Phone },
   { label: "Education", value: "Information Systems, GPA 3.86", icon: GraduationCap },
-  { label: "Focus", value: "Web, mobile, ERP, POS, workflows", icon: BadgeCheck },
+  { label: "Focus", value: "Full-stack, mobile, digital operations, and workflow systems", icon: BadgeCheck },
 ];

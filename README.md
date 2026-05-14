@@ -32,4 +32,9 @@ npm run start
 3. Keep the default Next.js settings.
 4. Deploy.
 
-Before publishing, replace `public/Andreas-Natanael-Irawan-CV.pdf` with the final CV PDF and update `siteUrl` in `src/app/layout.tsx`, `src/app/robots.ts`, and `src/app/sitemap.ts` with the production domain.
+The website includes two downloadable CV files in `public/`:
+
+- `Andreas-Natanael-Irawan-IT-CV.pdf`
+- `Andreas-Natanael-Irawan-General-CV.pdf`
+
+Before publishing, update `siteUrl` in `src/app/layout.tsx`, `src/app/robots.ts`, and `src/app/sitemap.ts` with the production domain.

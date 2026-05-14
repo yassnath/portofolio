@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Andreas Natanael Irawan",
   },
   description:
-    "Professional portfolio of Andreas Natanael Irawan, an Information Systems graduate from Malang focused on fullstack, mobile, POS, ERP, REST API, RBAC, and workflow-driven systems.",
+    "Professional portfolio of Andreas Natanael Irawan, an Information Systems graduate from Malang with hands-on experience in full-stack development, mobile development, POS, ERP, REST API, RBAC, dashboards, and workflow-driven systems.",
   keywords: [
     "Andreas Natanael Irawan",
     "Fullstack Developer",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: "Andreas Natanael Irawan | Fullstack Developer Portfolio",
     description:
-      "Information Systems graduate building scalable web, mobile, and operational systems with Next.js, Laravel, Flutter, PostgreSQL, Docker, and RBAC workflows.",
+      "Information Systems graduate building scalable web, mobile, POS, ERP, dashboard, and operational systems with Next.js, Laravel, Flutter, PostgreSQL, Docker, and RBAC workflows.",
     siteName: "Andreas Nath Portfolio",
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Andreas Natanael Irawan | Fullstack Developer Portfolio",
     description:
-      "Fullstack and mobile developer focused on scalable web, POS, ERP, REST API, RBAC, and operational systems.",
+      "Fullstack and mobile developer focused on scalable web, POS, ERP, REST API, RBAC, dashboards, and operational systems.",
     images: ["/og-image.svg"],
   },
   alternates: {

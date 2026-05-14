@@ -40,7 +40,7 @@ export function CertificationsSection() {
                 <p className="mt-2 text-lg font-bold text-slate-50">{education.period}</p>
               </div>
               <div className="rounded-xl border border-slate-800 bg-slate-950/58 p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">GPA</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">IPK</p>
                 <p className="mt-2 text-lg font-bold text-primary">{education.gpa}</p>
               </div>
             </div>
