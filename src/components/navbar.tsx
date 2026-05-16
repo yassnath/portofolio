@@ -22,33 +22,36 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 border-b transition duration-300",
         scrolled
-          ? "border-glass-border/90 bg-background/82 shadow-[0_18px_48px_rgba(2,6,23,0.24)] backdrop-blur-xl"
-          : "border-transparent bg-transparent",
+          ? "border-glass-border/90 bg-background/78 shadow-[0_18px_48px_rgba(2,6,23,0.28)] backdrop-blur-xl"
+          : "border-transparent bg-background/20 backdrop-blur-sm",
       )}
     >
-      <nav className="section-shell flex h-20 items-center justify-between">
-        <a className="focus-ring rounded-lg text-base font-bold tracking-wide text-slate-50" href="#home" aria-label="Go to home">
-          {profile.shortName}
+      <nav className="section-shell flex h-[4.5rem] items-center justify-between gap-4 md:h-20">
+        <a className="focus-ring inline-flex min-w-0 items-center gap-2 rounded-lg text-base font-bold tracking-wide text-slate-50" href="#home" aria-label="Go to home">
+          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg border border-primary/35 bg-primary/12 text-sm text-secondary shadow-[0_0_24px_rgba(59,130,246,0.18)]">
+            N
+          </span>
+          <span className="truncate">{profile.shortName}</span>
         </a>
 
-        <div className="hidden items-center gap-1 xl:flex">
+        <div className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="focus-ring rounded-lg px-3 py-2 text-sm font-medium text-slate-300 transition hover:bg-surface/80 hover:text-slate-50"
+              className="focus-ring rounded-lg px-2.5 py-2 text-sm font-medium text-slate-300 transition hover:bg-surface/80 hover:text-slate-50 xl:px-3"
             >
               {item.label}
             </a>
           ))}
         </div>
 
-        <div className="hidden items-center gap-3 xl:flex">
-          <Button href="#contact">Contact Me</Button>
+        <div className="hidden items-center gap-2 lg:flex">
+          <Button href="#contact" className="px-4 xl:px-5">Contact Me</Button>
         </div>
 
         <button
-          className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-lg border border-glass-border bg-surface/70 text-slate-100 xl:hidden"
+          className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-lg border border-glass-border bg-surface/75 text-slate-100 shadow-[0_12px_34px_rgba(2,6,23,0.24)] backdrop-blur-xl lg:hidden"
           type="button"
           aria-label={open ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={open}
@@ -60,11 +63,11 @@ export function Navbar() {
 
       <div
         className={cn(
-          "section-shell overflow-hidden transition-[max-height,opacity] duration-300 xl:hidden",
+          "section-shell overflow-hidden transition-[max-height,opacity] duration-300 lg:hidden",
           open ? "max-h-[560px] pb-5 opacity-100" : "max-h-0 opacity-0",
         )}
       >
-        <div className="rounded-xl border border-glass-border bg-background/95 p-2 shadow-2xl">
+        <div className="rounded-xl border border-glass-border bg-background/92 p-2 shadow-2xl backdrop-blur-2xl">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -75,11 +78,8 @@ export function Navbar() {
               {item.label}
             </a>
           ))}
-          <div className="mt-2 grid grid-cols-2 gap-2 border-t border-glass-border pt-2">
-            <Button href={profile.cv} variant="secondary" className="px-3" download>
-              IT CV
-            </Button>
-            <Button href="#contact" className="px-3" onClick={() => setOpen(false)}>
+          <div className="mt-2 border-t border-glass-border pt-2">
+            <Button href="#contact" className="w-full px-3" onClick={() => setOpen(false)}>
               Contact Me
             </Button>
           </div>

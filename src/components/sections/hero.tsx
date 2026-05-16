@@ -3,43 +3,43 @@
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import type { CSSProperties } from "react";
-import { Activity, ArrowDownRight, ArrowRight, CheckCircle2, Download, GitBranch, Lock, Mail, Sparkles, Terminal } from "lucide-react";
+import { Activity, ArrowDownRight, ArrowRight, CheckCircle2, GitBranch, Lock, Mail, Sparkles, Terminal } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { dashboardHighlights, heroBadges, heroSignals, profile, stats, workflowSteps } from "@/lib/portfolio";
+import { dashboardHighlights, heroBadges, heroSignals, stats, workflowSteps } from "@/lib/portfolio";
 
 export function HeroSection() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section id="home" className="section-shell flex scroll-mt-28 items-center pt-24 md:pt-28 xl:min-h-[760px] xl:pt-20">
-      <div className="hero-frame grid w-full grid-cols-[minmax(0,1fr)] items-center gap-8 border border-glass-border/70 bg-background/35 px-5 py-8 shadow-[0_28px_120px_rgba(2,6,23,0.34)] sm:px-6 md:px-8 md:py-10 xl:grid-cols-[minmax(0,1.08fr)_minmax(400px,0.92fr)] xl:gap-14">
+    <section id="home" className="section-shell flex scroll-mt-28 items-center pt-[5.5rem] pb-8 md:pt-28 md:pb-10 lg:min-h-[700px] xl:min-h-[720px] 2xl:min-h-[780px] xl:pt-[5.5rem]">
+      <div className="hero-frame grid w-full grid-cols-[minmax(0,1fr)] items-center gap-8 border border-glass-border/70 bg-background/42 px-4 py-7 shadow-[0_28px_120px_rgba(2,6,23,0.38)] sm:px-6 sm:py-8 md:px-8 md:py-9 lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.72fr)] lg:gap-8 xl:grid-cols-[minmax(0,1.04fr)_minmax(410px,0.96fr)] xl:gap-12 xl:px-10">
         <div className="min-w-0 max-w-3xl">
           <div
-            className="motion-fade-up mb-6 inline-flex max-w-full items-center gap-3 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-left text-sm font-semibold text-sky-100 shadow-[0_0_32px_rgba(59,130,246,0.12)]"
+            className="motion-fade-up mb-6 inline-flex max-w-full items-center gap-3 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-2 text-left text-sm font-semibold text-sky-100 shadow-[0_0_32px_rgba(59,130,246,0.12)] sm:px-4"
             style={{ "--delay": "0ms" } as CSSProperties}
           >
             <span className="status-pulse h-2.5 w-2.5 rounded-full bg-success" aria-hidden="true" />
             <Sparkles size={16} aria-hidden="true" />
-            <span className="min-w-0 leading-5">Available for production-focused software roles</span>
+            <span className="min-w-0 leading-5">Available for web, mobile, and software engineering roles</span>
           </div>
 
           <h1
             style={{ "--delay": "80ms" } as CSSProperties}
-            className="motion-fade-up gradient-text text-balance text-[2.32rem] font-black leading-[1.1] sm:text-5xl md:text-[3.15rem] md:leading-[1.06] xl:text-[3.65rem] xl:leading-[1.03]"
+            className="motion-fade-up gradient-text text-balance text-[2.22rem] font-black leading-[1.1] min-[390px]:text-[2.42rem] sm:text-5xl md:text-[3.15rem] md:leading-[1.06] lg:text-[2.86rem] xl:text-[3.22rem] xl:leading-[1.03] 2xl:text-[3.58rem]"
           >
-            Fullstack Developer building scalable web, mobile, and operational systems.
+            Building clean software for teams that need reliable web, mobile, and workflow systems.
           </h1>
 
           <p
             style={{ "--delay": "160ms" } as CSSProperties}
-            className="motion-fade-up mt-6 max-w-2xl text-base leading-7 text-muted-copy sm:text-lg sm:leading-8"
+            className="motion-fade-up mt-5 max-w-2xl text-base leading-7 text-muted-copy sm:text-lg sm:leading-8"
           >
-            I design and develop production-ready applications using Next.js, Laravel, Flutter, PostgreSQL, Docker, and modern workflow-driven architecture.
+            I turn operational problems into polished applications: realtime POS flows, ERP modules, secure APIs, dashboards, mobile tools, and role-based workflows built with Next.js, Laravel, Flutter, PostgreSQL, Docker, and Supabase.
           </p>
 
           <div
             style={{ "--delay": "220ms" } as CSSProperties}
-            className="motion-fade-up mt-7 hidden gap-3 sm:grid md:grid-cols-3"
+            className="motion-fade-up mt-6 hidden gap-3 sm:grid md:grid-cols-3"
           >
             {heroSignals.map((signal) => (
               <div key={signal.label} className="glass-card rounded-xl p-3.5 transition hover:border-secondary/60">
@@ -51,9 +51,9 @@ export function HeroSection() {
 
           <div
             style={{ "--delay": "300ms" } as CSSProperties}
-            className="motion-fade-up mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
+            className="motion-fade-up mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
           >
-            <Button href="#projects">
+            <Button href="#projects" className="shadow-[0_18px_60px_rgba(59,130,246,0.28)]">
               View Projects
               <ArrowDownRight size={18} aria-hidden="true" />
             </Button>
@@ -65,10 +65,10 @@ export function HeroSection() {
 
           <div
             style={{ "--delay": "380ms" } as CSSProperties}
-            className="motion-fade-up mt-6 flex flex-wrap gap-3"
+            className="motion-fade-up mt-5 flex flex-wrap gap-2.5 sm:gap-3"
           >
             {heroBadges.map((badge) => (
-              <span key={badge} className="rounded-full border border-glass-border bg-surface/70 px-3.5 py-2 text-sm font-medium text-slate-200 shadow-[inset_0_1px_0_rgba(248,250,252,0.04)]">
+              <span key={badge} className="rounded-full border border-glass-border bg-surface/68 px-3 py-1.5 text-sm font-medium text-slate-200 shadow-[inset_0_1px_0_rgba(248,250,252,0.04)] sm:px-3.5 sm:py-2">
                 {badge}
               </span>
             ))}
@@ -76,10 +76,10 @@ export function HeroSection() {
 
           <div
             style={{ "--delay": "460ms" } as CSSProperties}
-            className="motion-fade-up mt-7 grid grid-cols-2 gap-3 sm:grid-cols-4"
+            className="motion-fade-up mt-6 grid grid-cols-2 gap-2.5 sm:grid-cols-4 sm:gap-3 lg:hidden"
           >
             {stats.map((stat) => (
-              <div key={stat.label} className="glass-card rounded-xl p-4 transition hover:-translate-y-0.5 hover:border-primary/60">
+              <div key={stat.label} className="glass-card rounded-xl p-3.5 transition hover:-translate-y-0.5 hover:border-primary/60 sm:p-4">
                 <p className="text-xl font-bold text-slate-50">{stat.value}</p>
                 <p className="mt-1 text-xs font-medium uppercase tracking-[0.16em] text-muted-copy">{stat.label}</p>
               </div>
@@ -88,7 +88,7 @@ export function HeroSection() {
 
           <div
             style={{ "--delay": "540ms" } as CSSProperties}
-            className="motion-fade-up mt-5 hidden items-center gap-2 rounded-2xl border border-glass-border bg-surface/45 p-3 md:flex"
+            className="motion-fade-up mt-5 hidden items-center gap-2 rounded-2xl border border-glass-border bg-surface/45 p-3 2xl:flex"
             aria-label="Delivery workflow"
           >
             {workflowSteps.map((step, index) => (
@@ -105,14 +105,14 @@ export function HeroSection() {
         <motion.div
           whileHover={reduceMotion ? undefined : { y: -4 }}
           transition={{ duration: 0.24, ease: "easeOut" }}
-          className="motion-fade-up relative mx-auto w-full max-w-[760px] xl:max-w-[500px] xl:justify-self-end"
+          className="motion-fade-up relative mx-auto w-full max-w-[760px] lg:max-w-[430px] lg:justify-self-end xl:max-w-[510px]"
           style={{ "--delay": "260ms" } as CSSProperties}
         >
-          <div className="premium-border overflow-hidden rounded-[24px] p-5 sm:p-6">
+          <div className="premium-border overflow-hidden rounded-[22px] p-4 sm:rounded-[24px] sm:p-6">
             <div className="mb-5 flex items-center justify-between border-b border-glass-border pb-4">
               <div>
-                <p className="text-sm font-semibold text-slate-50">Command Center</p>
-                <p className="text-xs text-muted-copy">Portfolio signal for hiring teams</p>
+                <p className="text-sm font-semibold text-slate-50">Engineering Signal</p>
+                <p className="text-xs text-muted-copy">Fast scan for hiring teams</p>
               </div>
               <div className="flex gap-1.5" aria-hidden="true">
                 <span className="h-2.5 w-2.5 rounded-full bg-primary" />
@@ -135,7 +135,7 @@ export function HeroSection() {
                 </div>
                 <div className="min-w-0">
                   <p className="text-sm font-bold text-slate-50">Andreas Nath</p>
-                  <p className="mt-1 text-xs text-muted-copy">Fullstack, mobile, and systems developer</p>
+                  <p className="mt-1 text-xs text-muted-copy">Fullstack, mobile, workflow systems</p>
                 </div>
                 <div className="ml-auto hidden rounded-full border border-success/30 bg-success/10 px-3 py-1 text-xs font-bold text-emerald-300 sm:block">
                   Available
@@ -159,12 +159,12 @@ export function HeroSection() {
               </div>
 
               <div className="space-y-3">
-                {dashboardHighlights.map((item) => {
+                {dashboardHighlights.map((item, index) => {
                   const Icon = item.icon;
                   return (
                     <div
                       key={item.label}
-                      className="group flex items-center gap-3 rounded-xl border border-glass-border bg-background/58 p-4 transition hover:border-secondary/60 hover:bg-surface/80"
+                      className={`${index > 2 ? "hidden xl:flex" : "flex"} group items-center gap-3 rounded-xl border border-glass-border bg-background/58 p-4 transition hover:border-secondary/60 hover:bg-surface/80`}
                     >
                       <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/12 text-secondary">
                         <Icon size={20} aria-hidden="true" />
@@ -179,11 +179,11 @@ export function HeroSection() {
               </div>
             </div>
 
-            <div className="mt-5 grid gap-3 md:grid-cols-[1fr_0.9fr]">
+            <div className="mt-5 hidden gap-3 md:grid-cols-[1fr_0.9fr] xl:grid">
               <div className="glass-card rounded-xl p-4">
                 <div className="mb-3 flex items-center justify-between text-sm">
-                  <span className="font-medium text-slate-200">System readiness</span>
-                  <span className="font-semibold text-secondary">Production-ready</span>
+                  <span className="font-medium text-slate-200">Delivery signal</span>
+                  <span className="font-semibold text-secondary">Production-minded</span>
                 </div>
                 <div className="h-2 overflow-hidden rounded-full bg-glass-border">
                   <div className="gradient-rail h-full w-[88%] rounded-full" />

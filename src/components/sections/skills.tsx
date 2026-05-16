@@ -1,4 +1,7 @@
+"use client";
+
 import { AnimatedSection } from "@/components/animated-section";
+import { RevealArticle } from "@/components/reveal-article";
 import { SectionHeading } from "@/components/section-heading";
 import { skills } from "@/lib/portfolio";
 
@@ -8,15 +11,19 @@ export function SkillsSection() {
       <div className="section-shell">
         <SectionHeading
           eyebrow="Skills"
-          title="A practical stack for shipping business-ready applications."
-          description="Skillset Andreas berfokus pada aplikasi web, mobile, REST API, database, deployment workflow, dan sistem berbasis role serta proses."
+          title="A practical stack for building products that survive real workflows."
+          description="Skillset ini berfokus pada web app, mobile app, REST API, database, deployment workflow, authentication, RBAC, dan dashboard operasional yang bisa dipakai berulang oleh tim."
         />
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {skills.map((group) => {
+          {skills.map((group, index) => {
             const Icon = group.icon;
             return (
-              <article key={group.title} className="glass-card group relative overflow-hidden rounded-2xl p-6 transition hover:-translate-y-1 hover:border-secondary/60">
+              <RevealArticle
+                key={group.title}
+                delay={index * 0.05}
+                className="glass-card group relative overflow-hidden rounded-2xl p-6 transition hover:-translate-y-1 hover:border-secondary/60"
+              >
                 <div className="gradient-rail absolute inset-x-0 top-0 h-1 opacity-0 transition group-hover:opacity-100" aria-hidden="true" />
                 <div className="mb-5 flex items-center gap-3">
                   <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/12 text-secondary">
@@ -31,7 +38,7 @@ export function SkillsSection() {
                     </span>
                   ))}
                 </div>
-              </article>
+              </RevealArticle>
             );
           })}
         </div>

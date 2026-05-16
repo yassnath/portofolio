@@ -7,10 +7,12 @@ import { ExperienceSection } from "@/components/sections/experience";
 import { HeroSection } from "@/components/sections/hero";
 import { ProjectsSection } from "@/components/sections/projects";
 import { SkillsSection } from "@/components/sections/skills";
+import { SpaceBackground } from "@/components/space-background";
 
 export default function Home() {
   return (
     <>
+      <SpaceBackground />
       <Navbar />
       <main>
         <HeroSection />

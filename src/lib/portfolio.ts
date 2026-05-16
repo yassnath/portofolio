@@ -3,7 +3,6 @@ import {
   BriefcaseBusiness,
   Code2,
   Database,
-  Download,
   ExternalLink,
   Github,
   GraduationCap,
@@ -30,9 +29,6 @@ export const profile = {
   whatsapp: "https://wa.me/6285771753354",
   linkedin: "https://www.linkedin.com/in/andreasnatanaelirawan",
   github: "https://github.com/yassnath",
-  cv: "/Andreas-Natanael-Irawan-IT-CV.pdf",
-  cvIt: "/Andreas-Natanael-Irawan-IT-CV.pdf",
-  cvGeneral: "/Andreas-Natanael-Irawan-General-CV.pdf",
   gpa: "3.86",
 };
 
@@ -47,32 +43,32 @@ export const navItems = [
 ];
 
 export const heroBadges = [
-  "Fullstack Developer",
-  "Mobile Developer",
-  "Information Systems Graduate",
-  "Available for Work",
+  "Fullstack Engineering",
+  "Mobile Apps",
+  "Operational Systems",
+  "Open for Work",
 ];
 
 export const heroSignals = [
-  { label: "Role fit", value: "Fullstack / Mobile / Software" },
-  { label: "Systems focus", value: "ERP, POS, dashboards, workflow" },
-  { label: "Recruiter scan", value: "GPA 3.86 + hands-on delivery" },
+  { label: "Role fit", value: "Fullstack, mobile, and software delivery" },
+  { label: "Builder focus", value: "ERP, POS, dashboards, workflow systems" },
+  { label: "Recruiter scan", value: "GPA 3.86 with practical project ownership" },
 ];
 
 export const workflowSteps = ["Discover", "Design", "Build", "Automate", "Deploy"];
 
 export const dashboardHighlights = [
-  { label: "ERP System", value: "Multi-tenant", icon: Layers3 },
-  { label: "Realtime POS", value: "KDS + reporting", icon: MonitorCog },
-  { label: "Mobile Dashboard", value: "Role-based ops", icon: Smartphone },
-  { label: "RBAC & Workflow Automation", value: "Secure process flow", icon: Workflow },
+  { label: "ERP Architecture", value: "Multi-tenant business modules", icon: Layers3 },
+  { label: "Realtime POS Flow", value: "Kitchen display + reporting", icon: MonitorCog },
+  { label: "Mobile Ops Dashboard", value: "Role-based field visibility", icon: Smartphone },
+  { label: "RBAC Automation", value: "Secure workflow governance", icon: Workflow },
 ];
 
 export const stats = [
   { value: "3.86", label: "GPA" },
-  { value: "5", label: "Featured projects" },
-  { value: "2021", label: "Production experience since" },
-  { value: "Full-stack", label: "Web, mobile, systems" },
+  { value: "5", label: "Case-study projects" },
+  { value: "2021", label: "Digital production since" },
+  { value: "Ops", label: "Business workflow focus" },
 ];
 
 export const projects = [
@@ -80,12 +76,12 @@ export const projects = [
     title: "Solvix ERP",
     subtitle: "Multi-Tenant ERP System",
     description:
-      "A multi-tenant ERP system covering finance, procurement, inventory, HR, and project operations with tenant-scoped access control.",
+      "A business operating system concept for finance, procurement, inventory, HR, and projects with tenant-scoped access control.",
     problem:
-      "Growing operations need shared business data without exposing one tenant's records to another or slowing approvals across departments.",
+      "Growing teams need shared business data, but each tenant and department must stay protected, auditable, and easy to manage.",
     solution:
-      "Developed role-based access control, tenant-scoped data security, workflow automation, and audit logging for operational governance.",
-    impact: "Improves governance, process visibility, and accountable data access across core ERP modules.",
+      "Designed tenant-scoped data access, RBAC, workflow automation, and audit logging so business processes can move without losing control.",
+    impact: "Gives operators clearer governance, safer access boundaries, and better visibility across core ERP modules.",
     tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
     features: ["Finance module", "Procurement flow", "Inventory tracking", "HR and projects", "RBAC security", "Audit logging"],
     links: [
@@ -97,12 +93,12 @@ export const projects = [
     title: "Solvix Moka POS",
     subtitle: "Realtime Coffee Shop POS",
     description:
-      "A realtime POS and kitchen workflow system for coffee shop operations with clear order states and reliable reporting.",
+      "A realtime point-of-sale workflow for coffee shop operations, connecting cashier, kitchen, payment, receipt, and reporting flows.",
     problem:
-      "Cashier, kitchen, and manager workflows often drift apart when orders, payments, and reporting are handled in separate tools.",
+      "Cashier, kitchen, and manager workflows can drift apart when order status, payments, and reports are handled in disconnected tools.",
     solution:
-      "Built a POS flow with Server-Sent Events for Kitchen Display updates, split payments, receipt generation, offline auto-sync, and CSV sales exports.",
-    impact: "Creates a faster counter-to-kitchen loop and gives managers sales visibility through analytics and CSV reporting.",
+      "Built Server-Sent Events for kitchen display updates, split payments, receipt generation, offline auto-sync, analytics, and CSV exports.",
+    impact: "Creates a tighter counter-to-kitchen loop and gives managers faster sales visibility from a single operational dashboard.",
     tech: ["Next.js", "PostgreSQL", "SSE"],
     features: ["Realtime KDS", "New / In Progress / Ready states", "Split payments", "Receipt generation", "Offline auto-sync", "Sales CSV export"],
     links: [
@@ -114,12 +110,12 @@ export const projects = [
     title: "CashFlow",
     subtitle: "Android Finance Application",
     description:
-      "An Android finance application for income, expense, debt, and analytics workflows with cloud-backed synchronization.",
+      "A mobile finance companion for income, expense, debt, and insight workflows with cloud-backed synchronization.",
     problem:
-      "Personal finance tracking becomes inconsistent when data entry, debt notes, and insight generation live in different places.",
+      "Personal finance tracking becomes inconsistent when transactions, debt notes, and financial insights live in different places.",
     solution:
-      "Created a mobile-first tracking experience with Jetpack Compose, Supabase sync, secure authentication, debt records, and AI-based financial insights.",
-    impact: "Helps users understand spending patterns, debt position, and financial decisions from a single mobile dashboard.",
+      "Created a mobile-first tracking experience with Jetpack Compose, Supabase sync, secure authentication, debt records, and AI-based insights.",
+    impact: "Helps users read spending patterns, debt position, and financial decisions from one focused mobile dashboard.",
     tech: ["Kotlin", "Jetpack Compose", "Supabase"],
     features: ["Income tracking", "Expense tracking", "Analytics", "AI insights", "Debt tracking", "Secure auth", "Cloud sync"],
     links: [
@@ -131,12 +127,12 @@ export const projects = [
     title: "AS Nusa Trans Mobile",
     subtitle: "Logistics Operations Dashboard",
     description:
-      "A logistics operations dashboard for fleet, orders, and financial tracking with role-based mobile access.",
+      "A mobile operations dashboard concept for logistics teams managing fleet visibility, orders, finance, and role-based controls.",
     problem:
-      "Logistics teams need a centralized operational view without giving every role the same level of access or control.",
+      "Logistics teams need a centralized operational view without giving every role the same access, action rights, or financial visibility.",
     solution:
-      "Built structured dashboards and workflow controls in Flutter with Supabase-backed data to separate fleet, orders, and finance views.",
-    impact: "Supports faster operational monitoring and clearer accountability across logistics roles.",
+      "Structured Flutter and Supabase dashboards around role-specific views for fleet, order workflow, finance, and operational monitoring.",
+    impact: "Improves accountability by making each role see the right information at the right point in the workflow.",
     tech: ["Flutter", "Supabase"],
     features: ["Role-based dashboard", "Fleet monitoring", "Order workflow", "Financial tracking", "Structured workflow controls"],
     links: [
@@ -148,12 +144,12 @@ export const projects = [
     title: "Solvix Studio",
     subtitle: "SaaS Agency Platform",
     description:
-      "A SaaS agency platform combining a marketing website, authenticated client dashboard, order wizard, and lifecycle tracking.",
+      "A SaaS-style agency platform combining a conversion-focused website, authenticated dashboard, order wizard, and lifecycle tracking.",
     problem:
-      "Service businesses need a clean conversion path while keeping project requests, client access, and lifecycle status organized.",
+      "Service businesses need a clean inquiry path while keeping client access, project requests, and lifecycle status organized.",
     solution:
-      "Implemented a marketing website, authenticated dashboard, multi-step order wizard, lifecycle tracking, route-level protection, and RBAC enforcement.",
-    impact: "Turns service inquiries into trackable project workflows and makes client communication more structured.",
+      "Implemented marketing pages, authenticated dashboard areas, a multi-step order wizard, lifecycle tracking, route protection, and RBAC.",
+    impact: "Turns service inquiries into trackable project workflows and makes client communication easier to manage.",
     tech: ["Next.js", "Prisma", "PostgreSQL"],
     features: ["Marketing website", "Client dashboard", "Order wizard", "Lifecycle tracking", "Route protection", "RBAC"],
     links: [
@@ -288,11 +284,6 @@ export const contactLinks = [
   { label: "LinkedIn", href: profile.linkedin, icon: Linkedin },
   { label: "GitHub", href: profile.github, icon: Github },
   { label: "WhatsApp", href: profile.whatsapp, icon: MessageCircle },
-];
-
-export const cvLinks = [
-  { label: "Download IT CV", href: profile.cvIt, icon: Download },
-  { label: "Download Global CV", href: profile.cvGeneral, icon: Download },
 ];
 
 export const quickFacts = [

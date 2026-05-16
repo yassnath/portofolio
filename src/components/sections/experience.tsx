@@ -1,23 +1,29 @@
+"use client";
+
 import { CalendarDays } from "lucide-react";
+import { AnimatedSection } from "@/components/animated-section";
+import { RevealArticle } from "@/components/reveal-article";
 import { SectionHeading } from "@/components/section-heading";
 import { experiences } from "@/lib/portfolio";
 
 export function ExperienceSection() {
   return (
-    <section id="experience" className="scroll-mt-28 py-16 sm:py-20">
+    <AnimatedSection id="experience">
       <div className="section-shell">
         <SectionHeading
           eyebrow="Experience"
-          title="Hands-on work across software, operations, content, and production."
-          description="Timeline ini menampilkan pengalaman yang memperkuat sisi engineering, komunikasi, ownership, dan pemahaman workflow operasional."
+          title="Experience shaped by software delivery and live operational responsibility."
+          description="Timeline ini menunjukkan pengalaman teknis dan non-teknis yang membentuk cara kerja Andreas: cepat memahami proses, rapi mengeksekusi, dan bertanggung jawab pada hasil akhir."
         />
 
         <div className="relative">
           <div className="timeline-line absolute left-4 top-2 hidden h-[calc(100%-1rem)] w-px sm:block" aria-hidden="true" />
           <div className="space-y-5">
-            {experiences.map((experience) => (
-              <article
+            {experiences.map((experience, index) => (
+              <RevealArticle
                 key={`${experience.company}-${experience.period}`}
+                delay={index * 0.04}
+                direction="left"
                 className="relative sm:pl-12"
               >
                 <div className="absolute left-0 top-6 hidden h-8 w-8 rounded-full border border-primary/50 bg-slate-950 p-1 sm:block">
@@ -36,11 +42,11 @@ export function ExperienceSection() {
                   </div>
                   <p className="mt-4 text-sm leading-6 text-muted-copy">{experience.description}</p>
                 </div>
-              </article>
+              </RevealArticle>
             ))}
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

@@ -8,18 +8,18 @@ export function AboutSection() {
       <div className="section-shell grid gap-10 lg:grid-cols-[0.92fr_1.08fr]">
         <SectionHeading
           eyebrow="About"
-          title="Information Systems graduate with a builder mindset."
-          description="Saya adalah lulusan Sistem Informasi dengan IPK 3.86 dan pengalaman hands-on dalam full-stack development, mobile development, digital operations, dan system-based workflows."
+          title="A systems-minded developer who likes turning messy workflows into usable products."
+          description="Saya lulusan Sistem Informasi dengan IPK 3.86 dan pengalaman hands-on dalam full-stack development, mobile development, digital operations, serta workflow berbasis sistem."
         />
 
         <div className="space-y-6">
           <div className="premium-border overflow-hidden rounded-2xl p-6 sm:p-8">
             <div className="gradient-rail mb-6 h-1 w-24 rounded-full" aria-hidden="true" />
             <p className="text-lg leading-8 text-slate-200">
-              Saya berpengalaman membangun dan mendukung aplikasi web, mobile, dashboard operasional, POS realtime, ERP multi-tenant, REST API, authentication systems (RBAC), serta implementasi workflow yang terstruktur. Fokus saya adalah membangun sistem yang scalable, production-ready, aman akses datanya, dan jelas alur operasionalnya.
+              Saya membangun aplikasi web dan mobile yang menyelesaikan masalah operasional nyata: POS realtime, dashboard monitoring, ERP multi-tenant, REST API, authentication/RBAC, dan workflow automation. Fokus saya bukan hanya membuat UI terlihat bagus, tetapi memastikan alur data, akses pengguna, dan proses bisnisnya rapi.
             </p>
             <p className="mt-5 text-base leading-7 text-muted-copy">
-              Di luar software development, saya juga memiliki pengalaman digital operations, content, website administration, cybersecurity, multimedia, videography, teaching assistant, dan live production. Kombinasi ini membentuk cara kerja yang detail-oriented, adaptable, cepat belajar, kolaboratif, dan bertanggung jawab terhadap hasil.
+              Pengalaman di content, website administration, cybersecurity, multimedia, teaching assistant, dan live production membuat saya terbiasa melihat produk dari sisi teknis sekaligus pengguna. Saya cepat belajar, detail-oriented, komunikatif, dan punya ownership tinggi sampai solusi benar-benar bisa dipakai.
             </p>
           </div>
 
